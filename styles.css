@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+.grid-container{
+	display:grid;
+	grid-template-columns:repeat(9,1fr);
+	gap:20px;
+}
+.grid-item{
+	background-color:lightgray;
+	height:150px;
+	width:200px;
+	border-radius:5px;
+	font-size:40px;
+	text-align:center;
+}
+@media screen and (min-width:250px )and(max-width:480px){
+	.grid-container{
+		grid-template-columns:repeat(1,1fr);
+	}
+}
+@media screen and (min-width:481px )and(max-width:768px){
+	.grid-container{
+		grid-template-columns:repeat(3,1fr);
+	}
+}
+@media screen and (min-width:769px )and(max-width:1024px){
+	.grid-container{
+		grid-template-columns:repeat(4,1fr);
+	}
+}

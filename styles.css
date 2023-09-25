@@ -1,19 +1,18 @@
 /*  your css code here. If applicable */
 .grid-container{
 	width:100vw;
-	display:grid;
-	grid-template-columns:repeat(9,1fr);
-	gap:10px;
+	display:flex;
+	flex-wrap: wrap;
 }
 .grid-item{
-	display:flex;
-	flex-wrap:wrap;
 	background-color:lightgray;
 	height:150px;
 	width:200px;
 	border-radius:5px;
 	font-size:40px;
+	display:flex;
 	justify-content:center;
 	align-items:center;
-	
+	margin:10px;
 }
+
